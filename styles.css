@@ -4,10 +4,8 @@
     margin: 0;
 }
 
-
 html {
-    font-family: "georama", sans-serif;
-    font-size: 62.5%;
+    font-size: 62%;
 }
 
 .container {
@@ -23,13 +21,13 @@ html {
     flex-direction: column;
     width: 500px;
     border: 1px solid gray;
+    font-size: 2rem;
 }
 
 .calculator-display {
     padding: 25px 15px;
     width: 100%;
     text-align: right;
-    font-size: medium;
     border: 1px solid gray;
     overflow-x: auto;
 }
@@ -49,7 +47,6 @@ html {
     width: 25%;
     padding: 15px 0;
     text-align: center;
-    font-size: 15px;;
     cursor: pointer;
     background-color: white;
     border: 1px solid gray;
@@ -66,6 +63,6 @@ html {
 .keypad-button.large {
     width: 50%;
 }
-.ketpad-button.dark {
+.keypad-button.dark {
     background-color: lightgray;
 }
