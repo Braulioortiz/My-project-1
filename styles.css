@@ -28,7 +28,9 @@ html {
     padding: 25px 15px;
     width: 100%;
     text-align: right;
+    color: azure;
     border: 1px solid gray;
+    background-color: rgb(68, 68, 68);
     overflow-x: auto;
 }
 
@@ -47,8 +49,9 @@ html {
     width: 25%;
     padding: 15px 0;
     text-align: center;
+    color: white;
     cursor: pointer;
-    background-color: white;
+    background-color: rgb(52, 58, 66);
     border: 1px solid gray;
 }
 
@@ -58,11 +61,11 @@ html {
 }
 
 .keypad-button.yellow {
-    background-color: yellow;
+    background-color: rgb(42, 95, 126);
 }
 .keypad-button.large {
     width: 50%;
 }
 .keypad-button.dark {
-    background-color: lightgray;
+    background-color: rgb(42, 95, 126);
 }
