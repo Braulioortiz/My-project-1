@@ -5,7 +5,7 @@ window.addEventListener('load', ()=> {     /* to hear when load files*/
 
     // ducument.getElementByclassName let to search by class name (dont need to have point before)
     /* created two const and keep the elements that we need*/
-     const keypadButtons = document.getElementsByClassName ('keypad-button');
+     const keypadButtons = document.getElementsByClassName('keypad-button');
 
     /* created another conts to conver the htmlcollection to an ARRAY */
      const keypadButtonsArray = Array.from(keypadButtons);
@@ -15,19 +15,19 @@ window.addEventListener('load', ()=> {     /* to hear when load files*/
 
         /* to every button added a listener event */
         button.addEventListener('click', ()=> {
-          calculator(button. display);
+          calculator(button, display);
         })
      })
-});
+}); 
 
 function calculator(button, display) {
     switch (button.innerHTML) {
       case 'C':
-        deleteLastEntry(display)
+       deleteLastEntry(display);
       break;
 
       case '=':
-        avaluateExpression(display);
+        calculate(display);
       break;
 
       default:
@@ -37,16 +37,16 @@ function calculator(button, display) {
 }
 
 function calculate(display) {
-    display.innerHTML == eval(display.innerHTML)
+    display.innerHTML = eval(display.innerHTML) /*take the string and resolve to keep the innerHTML from display*/
 }
 
 function update(display, button) {
-    if(display.innerHTML == 0) {
+    if (display.innerHTML == 0) {
         display.innerHTML = '';
     }
-    display,innerHTML += button.innerHTML; /* display.innerHMTL = display.innerHTML + button.innerHTML  (same thing)*/
+    display.innerHTML += button.innerHTML; /* display.innerHMTL = display.innerHTML + button.innerHTML  (same thing)*/
 }
 
 function deleteLastEntry(display) {
-    display.innerHTML
+    display.innerHTML = 0;
 }
