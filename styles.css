@@ -20,8 +20,17 @@ html {
     display: flex;
     flex-direction: column;
     width: 500px;
-    border: 1px solid gray;
+    border: 25px solid rgb(100, 96, 83);
+    border-radius: 5%;
     font-size: 2rem;
+}
+
+.brand-calculator {
+    text-align: center; 
+    font-size: small; 
+    background-color: rgb(40, 54, 66);
+    color: white;
+    padding: 5px;
 }
 
 .calculator-display {
@@ -29,7 +38,7 @@ html {
     width: 100%;
     text-align: right;
     color: azure;
-    border: 1px solid gray;
+    border: 5px solid rgb(40, 54, 66);
     background-color: rgb(68, 68, 68);
     overflow-x: auto;
 }
@@ -58,6 +67,7 @@ html {
 .keypad-button:hover {
     filter: brightness(80%);
     transition: filter .25s;
+    color: rgb(255, 197, 39);
 }
 
 .keypad-button.yellow {
